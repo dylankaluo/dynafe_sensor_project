@@ -1,0 +1,76 @@
+{
+  "method": "DynaFE-Net",
+  "full_name": "Dynamic Feature Enhanced Neural Network",
+  "dataset_source": "data/ethylene_CO.txt",
+  "mixture": "ethylene_co",
+  "n_samples": 100000,
+  "targets": [
+    "co_ppm",
+    "ethylene_ppm"
+  ],
+  "dt_seconds": 0.20000000000004547,
+  "feature_mode": "full",
+  "n_features": 1006,
+  "args": {
+    "mixture": "ethylene_co",
+    "data_dir": "data",
+    "results_dir": "results",
+    "synthetic": false,
+    "preset": "full",
+    "step": 20,
+    "max_samples": 100000,
+    "test_size": 0.25,
+    "val_size": 0.2,
+    "feature_mode": "full",
+    "hidden_dim": 256,
+    "num_blocks": 3,
+    "dropout": 0.1,
+    "epochs": 60,
+    "batch_size": 1024,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 10,
+    "grad_clip": 1.0,
+    "huber_delta": 1.0,
+    "transition_weight": 1.5,
+    "transition_quantile": 0.9,
+    "device": "auto",
+    "num_workers": 0,
+    "seed": 42,
+    "save_plots": true
+  },
+  "target_mean": [
+    158.05943298339844,
+    5.442370891571045
+  ],
+  "target_std": [
+    167.2492218017578,
+    5.354211807250977
+  ],
+  "best_val_rmse": 39.84281715073363,
+  "test_metrics": {
+    "co_ppm_rmse": 76.41547106934564,
+    "co_ppm_mae": 42.83436584472656,
+    "co_ppm_r2": 0.7353725433349609,
+    "co_ppm_smape_pct": 158.13653564453125,
+    "co_ppm_nrmse_range": 0.14327989916320955,
+    "ethylene_ppm_rmse": 4.106061056077982,
+    "ethylene_ppm_mae": 2.105307102203369,
+    "ethylene_ppm_r2": 0.5532410144805908,
+    "ethylene_ppm_smape_pct": 126.46974182128906,
+    "ethylene_ppm_nrmse_range": 0.2053030528038991,
+    "overall_rmse_mean": 40.26076606271181,
+    "overall_mae_mean": 22.469836473464966,
+    "overall_r2_mean": 0.6443067789077759,
+    "overall_smape_pct_mean": 142.30313873291016,
+    "overall_nrmse_range_mean": 0.17429147598355432
+  },
+  "design": {
+    "log_resistance_transform": "scale-stable representation of positive sensor readings",
+    "causal_dynamic_features": "lags, slopes, derivatives, EMA, rolling statistics",
+    "sensor_type_features": "type mean/std/contrast/interaction for repeated sensor groups",
+    "transition_weighted_loss": "higher loss weight around sparse concentration transitions",
+    "residual_mlp": "lightweight neural network for nonlinear cross-sensitivity",
+    "target_standardization": "balances gas concentration scales"
+  }
+}

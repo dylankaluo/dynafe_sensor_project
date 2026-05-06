@@ -1,0 +1,17 @@
+{
+  "co_ppm_rmse": 76.41547106934564,
+  "co_ppm_mae": 42.83436584472656,
+  "co_ppm_r2": 0.7353725433349609,
+  "co_ppm_smape_pct": 158.13653564453125,
+  "co_ppm_nrmse_range": 0.14327989916320955,
+  "ethylene_ppm_rmse": 4.106061056077982,
+  "ethylene_ppm_mae": 2.105307102203369,
+  "ethylene_ppm_r2": 0.5532410144805908,
+  "ethylene_ppm_smape_pct": 126.46974182128906,
+  "ethylene_ppm_nrmse_range": 0.2053030528038991,
+  "overall_rmse_mean": 40.26076606271181,
+  "overall_mae_mean": 22.469836473464966,
+  "overall_r2_mean": 0.6443067789077759,
+  "overall_smape_pct_mean": 142.30313873291016,
+  "overall_nrmse_range_mean": 0.17429147598355432
+}

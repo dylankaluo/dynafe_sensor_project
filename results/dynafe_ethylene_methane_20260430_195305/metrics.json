@@ -1,0 +1,17 @@
+{
+  "methane_ppm_rmse": 44.20660444948385,
+  "methane_ppm_mae": 20.660436630249023,
+  "methane_ppm_r2": 0.7182776927947998,
+  "methane_ppm_smape_pct": 102.90093231201172,
+  "methane_ppm_nrmse_range": 0.1542073013739231,
+  "ethylene_ppm_rmse": 3.7797474043074164,
+  "ethylene_ppm_mae": 1.9716438055038452,
+  "ethylene_ppm_r2": 0.421913743019104,
+  "ethylene_ppm_smape_pct": 138.5535430908203,
+  "ethylene_ppm_nrmse_range": 0.20620553300816422,
+  "overall_rmse_mean": 23.99317592689563,
+  "overall_mae_mean": 11.316040217876434,
+  "overall_r2_mean": 0.5700957179069519,
+  "overall_smape_pct_mean": 120.72723770141602,
+  "overall_nrmse_range_mean": 0.18020641719104366
+}
